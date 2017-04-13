@@ -31,10 +31,13 @@ def foo(sayat_link, driver):
                 8 : 'Huh! do you really want me to write about you? come one, forget about it!',
                 9 : 'Have got work, cant waste time writing about it. :P',
                 10 : 'I know you were friend zoned! I know your secrets! haha! :D'}
-    elem.send_keys(comments[randint(0,9)])
+    elem.send_keys(comments[randint(1,10)])
     driver.find_element_by_xpath("//div[@class='give-feedback']/form/div[@class='row']/div[@class='col-md-4 col-sm-12 col-xs-12 pull-right']/input[@value='Say it.']").click()
     driver.close()
 
 if __name__ == '__main__':
     driver = init()
-    foo('', driver)
+    sayat_link = ''
+    while True:
+        foo(sayat_link, init())
+    
