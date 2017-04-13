@@ -39,4 +39,4 @@ def foo(sayat_link, driver):
 
 if __name__ == '__main__':
     driver = init()
-    foo('https://sayat.me/SomeshtheMaverick', driver)
+    foo('', driver)
