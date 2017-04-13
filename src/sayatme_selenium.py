@@ -25,15 +25,13 @@ def foo(sayat_link, driver):
                 2 : 'huh! Well I dont wanna tell anything about you',
                 3 : 'If I had a gun with two bullets and had to shoot either you or Trump then, I would have shooted you twice in the head, B**ch!', 
                 4 : 'hmmm...cant think of anything...',
-                5 : 'Are you the one who asks everybody else how he/she is? :P',
-                6 : 'ohh god! Dont ask me this',
+                5 : 'Are you the one who asks everybody about how he/she is? :P',
+                6 : 'ohh god! Dont ask me this, I have got a life to live! ',
                 7 : 'Do you know when the stupidity was invented?, it was invented on your birthday :D',
                 8 : 'Huh! do you really want me to write about you? come one, forget about it!',
-                9 : 'Have got work, cant waste time writing about it. P',
-                10 : 'I know you were friend zoned! I know your secrets! haha! '}
-    a = randint(0,9)
-    print a
-    elem.send_keys(comments[a])
+                9 : 'Have got work, cant waste time writing about it. :P',
+                10 : 'I know you were friend zoned! I know your secrets! haha! :D'}
+    elem.send_keys(comments[randint(0,9)])
     driver.find_element_by_xpath("//div[@class='give-feedback']/form/div[@class='row']/div[@class='col-md-4 col-sm-12 col-xs-12 pull-right']/input[@value='Say it.']").click()
     driver.close()
 
