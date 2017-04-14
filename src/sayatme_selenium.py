@@ -23,7 +23,7 @@ def foo(sayat_link, driver):
     elem.clear()
     comments = {1 : 'Better you ask your mom, she still regret that mistake. :P',
                 2 : 'huh! Well I dont wanna tell anything about you',
-                3 : 'If I had a gun with two bullets and had to shoot either you or Trump then, I would have shooted you twice in the head, B**ch!', 
+                3 : 'If I had a gun with two bullets and had to shoot either you or Trump then, I would have shot you twice in the head, B**ch!', 
                 4 : 'hmmm...cant think of anything...',
                 5 : 'Are you the one who asks everybody about how he/she is? :P',
                 6 : 'ohh god! Dont ask me this, I have got a life to live! ',
